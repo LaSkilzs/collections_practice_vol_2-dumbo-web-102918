@@ -40,6 +40,7 @@ def merge_data(keys,data)
 end
 
 def find_cool(cool)
+<<<<<<< HEAD
   result = []
   cool.each_with_index do |array, idx|
   array.each{|k,v| result << cool[idx] if v == "cool"}
@@ -65,4 +66,8 @@ schools.each do |array|
    end
  end
  result.sort_by{|k,v|k}.to_h
+=======
+  result = {}
+  cool.each{|k,v|result[k] = v if v == "cool"}
+>>>>>>> 5be9a7e96b2a872efd164360f1d270f8a428270e
 end
